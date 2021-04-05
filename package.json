@@ -18,5 +18,8 @@
     "aframe-scene",
     "webvr",
     "vr"
-  ]
+  ],
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
 }
