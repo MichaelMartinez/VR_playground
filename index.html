@@ -11,24 +11,29 @@
 <body>
   <a-scene>
     <a-assets>
+      </a-asset-item id="seneca" src="assets/1106-ekaterinensky-park-seneca.glb">
+      </a-asset-item>
+      </a-asset-item id="hermitage" src="assets/hermitage-museum-106-portrait-of-a-stoic-kleanthos-1.glb">
+      </a-asset-item>
+      </a-asset-item id="marcus" src="assets/atelier-louvre-marcus-aurelius-1.glb">
+      </a-asset-item>
+      </a-asset-item id="napoli" src="assets/7254-museo-archeo-nazionale-di-napoli-bust.glb">
+      </a-asset-item>
       <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossorigin="anonymous" />
       <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous" />
-      </a-asset-item id:"seneca" src="./assets/1106-ekaterinensky-park-seneca.glb">
-      </a-asset-item>
-      </a-asset-item id:"hermitage" src="./assets/hermitage-museum-106-portrait-of-a-stoic-kleanthos-1.glb">
-      </a-asset-item>
-      </a-asset-item id:"marcus" src="./assets/atelier-louvre-marcus-aurelius-1.glb">
-      </a-asset-item>
-      </a-asset-item id:"napoli" src="./assets/7254-museo-archeo-nazionale-di-napoli-bust.glb">
-      </a-asset-item>
     </a-assets>
 
     <!-- Primitives. -->
-    <a-box link="href: webgl.html; title: My Homepage; on: click" position="-1 0.6 -3" rotation="0 45 0"
-      color="#4CC3D9"></a-box>
-    <a-sphere position="0 1.35 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-    <a-cylinder position="1 0.85 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-    <a-entity position="1 0.85 -3" gltf-model="#seneca"></a-entity>
+    <!-- <a-entity
+        gltf-model="url(assets/atelier-louvre-marcus-aurelius-1.glb)"
+        position="-1 0.85 -1"
+        scale=".01 .01 .01"
+      ></a-entity> -->
+    <a-entity gltf-model="url(assets/1106-ekaterinensky-park-seneca.glb)" postion="0 .1 -4" scale=".01 .01 .01"></a-entity>
+    <!-- <a-entity postion="1 1 -1.5" gltf-model="url(assets/hermitage-museum-106-portrait-of-a-stoic-kleanthos-1.glb)" scale=".01 .01 .01"></a-entity>
+    <a-entity position="1.5 1 -2" gltf-model="url(assets/atelier-louvre-marcus-aurelius-1.glb)" scale=".01 .01 .01"></a-entity>
+    <a-entity position="2 1 -3" gltf-model="url(assets/7254-museo-archeo-nazionale-di-napoli-bust.glb)" scale=".01 .01 .01"></a-entity> -->
+
     <a-plane position="0 .1 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
     <!-- Background sky. -->
@@ -38,8 +43,8 @@
     <a-circle src="#groundTexture" rotation="-90 0 0" radius="32"></a-circle>
 
     <!--Tracked controls. -->
-    <a-entity hand-controls="hand: left"></a-entity>
-    <a-entity hand-controls="hand: right"></a-entity>
+    <!-- <a-entity hand-controls="hand: left"></a-entity>
+    <a-entity hand-controls="hand: right"></a-entity> -->
   </a-scene>
 </body>
 
